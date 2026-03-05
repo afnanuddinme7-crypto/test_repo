@@ -24,12 +24,3 @@ if __name__ == "__main__":
     insecure_eval("print('Hello from eval!')")
     hardcoded_secret()
     sql_injection("admin' OR '1'='1")
-How to Scan with Semgrep
-Bash
-
-Copy code
-# Install Semgrep if not already installed
-pip install semgrep
-
-# Run a basic scan with built-in security rules
-semgrep --config=p/ci test_insecure.py
